@@ -3,7 +3,8 @@ cache/
 *.pyc
 *.pyo
 output
-theme
 plugins
 *.zhs.rst
+*.md
 content/uml
+pelicanconf.py.bak
