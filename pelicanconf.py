@@ -6,7 +6,7 @@ from os import getenv
 AUTHOR = 'Silver'
 SITENAME = "Silver's Blog"
 
-SITEURL = 'http://123.206.29.21/'
+SITEURL = 'http://silverchard.me'
 
 TIMEZONE = 'Asia/Shanghai'
 
@@ -22,8 +22,15 @@ DATE_FORMATS = {
 DISQUS_SITENAME = 'silverchard'
 DISQUS_DISPLAY_COUNTS = True
 GOOGLE_ANALYTICS = 'UA-75935913-1'
+DISQUSURL = 'http://silverchard.me'
 
 
+LINKS_SITE = (
+    ('张骞','https://mcdona1d.me/'),
+    ('刘亚龙', 'http://kidyalong.com/'),
+    ('徐正夫', 'http://www.xuzhengfu.cn/'),
+    ('杨嘉晨','https://farseerfc.me/'),
+)
 
 TAG_FEED_ATOM = None
 FEED_ATOM = None
@@ -86,7 +93,7 @@ SITEMAP = {
 USE_LESS = False
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 CHECK_MODIFIED_METHOD = "md5"
 LOAD_CONTENT_CACHE = True
 CACHE_CONTENT = True

@@ -21,8 +21,11 @@ USE_LESS = False
 # Following items are often useful when publishing
 
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+
+DISQUS_SITENAME = 'silverchard'
+DISQUS_DISPLAY_COUNTS = True
+GOOGLE_ANALYTICS = 'UA-75935913-1'
+
 TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ATOM = 'feeds/atom.xml'

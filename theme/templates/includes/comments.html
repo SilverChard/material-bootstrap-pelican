@@ -21,12 +21,13 @@
                         {% if not DISQUS_NO_ID %}
                             var disqus_identifier = '{{ article.date|strftime('%Y-%m-') ~ article.slug if DISQUS_ID_PREFIX_SLUG else article.slug }}';
                         {% endif %}
-                        var disqus_url = 'http:{{ SITEURL }}/{{ article.url }}';
+                        var disqus_url = '{{ DISQUSURL }}/{{ article.url }}';
                     {% elif page %}
                         {% if not DISQUS_NO_ID %}
                             var disqus_identifier = '{{ page.slug }}';
                         {% endif %}
-                        var disqus_url = 'http:{{ SITEURL }}/{{ page.slug }}.html';
+                        var disqus_url = '{{ DISQUSURL }}/{{ page.slug }}.html';
+                        
                     {% endif %}
 
                     var disqus_config = function () {

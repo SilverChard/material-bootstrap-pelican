@@ -1,13 +1,23 @@
 <footer id="fcfooter">
    <hr/>
+   
    <div class="container">
+         其他大神们 : 
+         {% for link in LINKS_SITE: %}
+                <a href="{{ link[1] }}">{{ link[0] }}</a>
+         {% endfor %}
+
+   
       <div class="row">
+      
+         
          {% if articles %}
             {% set copy_date = articles[0].date.strftime('%Y') %}
          {% else %}
             {% set copy_date = '' %}
          {% endif %}
-         <div class="col-md-24">
+         
+         <div class="col-md-14">
          <p><small>
             &copy; {{ copy_date }} {{ AUTHOR }}
             &middot; 通过
